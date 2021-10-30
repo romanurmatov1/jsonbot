@@ -17,6 +17,6 @@ async def echo(message: Message):
    if mtext == '/start':
       await bot.send_message(chat_id=chat_id, text="Iltimos bir nima deb yozing!")
    else:
-      await bot.send_message(chat_id=chat_id, text=f"<b><i>{text}</i></b>", parse_mode='HTML')
+      await bot.send_message(chat_id=chat_id, text=f"<pre>{text}</pre>", parse_mode='HTML')
    
    # await message.answer(text=text)
